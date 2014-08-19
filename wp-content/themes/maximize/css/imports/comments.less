@@ -1,0 +1,234 @@
+/* Comments */
+#comments {
+	position:relative;
+	padding:3.631em 1.618em;
+	background: rgba(0,0,0,0.025);
+	overflow: hidden;
+	.comment {
+		width:100%;
+		list-style: none;
+		position: relative;
+		.comment-container {
+			.clearfix;
+		}
+		&.thread-even {
+		}
+		&.bypostauthor {
+		}
+		&:after {
+			content: "";
+			width:4px;
+			height:100%;
+			position: absolute;
+			left:5%;
+			top:0;
+			display: block;
+			background-color: @bg_light - #111;
+			z-index: -1;
+			.border_radius_bottom(1em);
+		}
+		.comment-head {
+			margin-bottom:1.618em;
+			.name {
+				margin:0;
+				&:before {
+					.iconbefore;
+					content: "\f007";
+				}
+			}
+			.date {
+				&:before {
+					.iconbefore;
+					content: "\f017";
+				}
+			}
+			.name, .date {
+				margin-right:1.618em;
+			}
+			.edit {
+				position: absolute;
+				top:0;
+				right:0;
+				a {
+					font-size: .857em;
+					padding:1em 1.387em;
+					display: inline-block;
+					color: @color_body + #555;
+					.transition;
+					&:after {
+						.iconafter;
+						content: "\f044";
+					}
+					&:hover {
+						background-color: @bg_light + #0a0a0a;
+						color: @color_links;
+					}
+				}
+
+			}
+		}
+		.avatar {
+			float: left;
+			margin:0 1em 1em 0;
+			width:10%;
+			z-index: 999;
+			img {
+				margin:0;
+				display: block;
+				width:100%;
+				height: auto;
+				.border_radius(100%);
+				border:4px solid @bg_light - #111;
+				.borderbox;
+				padding:.236em;
+				background-color: @bg_light + #111;
+			}
+		}
+		.comment-content {
+			margin-bottom:2.618em;
+			padding:1em;
+			width:85%;
+			float: right;
+			.borderbox;
+			position: relative;
+			.content;
+			&:before {
+				content: "";
+				display: block;
+				position: absolute;
+				top:1.387em;
+				left:-1.9em;
+				border:1em solid @bg_light + #111;
+				border-width:.857em 1em;
+				border-color: transparent @bg_light + #111 transparent transparent;
+			}
+			#respond {
+				padding:1.618em 0 0 0;
+				border-top:1px dotted @border_main;
+				background: none;
+			}
+		}
+		.reply {
+			position: absolute;
+			bottom:0;
+			right:0;
+			a {
+				font-size: .857em;
+				padding:1em 1.387em;
+				display: inline-block;
+				color: @color_body + #555;
+				.transition;
+				&:after {
+					.iconafter;
+					content: "\f112";
+				}
+				&:hover {
+					background-color: @bg_light + #0a0a0a;
+					color: @color_links;
+				}
+			}
+		}
+	}
+
+	ul.children {
+		padding:0 0 0 15%;
+		margin:0;
+		position: relative;
+		&:before {
+			content: "";
+			position: absolute;
+			display: block;
+			top:1.618em;
+			left:5%;
+			height:4px;
+			width:10%;
+			background-color: @bg_light - #111;
+		}
+		&:after {
+			content: "";
+			display: block;
+			height:.618em;
+			width:.618em;
+			background-color: @bg_light;
+			position: absolute;
+			left:5%;
+			top:1.618em;
+			margin-left: -.309em;
+			margin-top:-.309em;
+			.border_radius(100%);
+			border:.236em solid @bg_light - #111;
+		}
+		.cancel-comment-reply {  }
+	}
+	.navigation {
+		a {
+			display: block;
+			text-decoration: none;
+		}
+	}
+	.pingbacks {
+		li.pingback {
+			margin: 0 0 1.618em;
+			.reply {
+				display: none;
+			}
+		}
+	}
+	.nocomments {
+		font-weight: bold;
+	}
+}
+
+/* Comments Form */
+#respond  {
+	padding:3.631em 1.618em;
+	background: rgba(0,0,0,0.045);
+	label {
+		color: lighten(@color_body, 10%);
+	}
+	#reply-title {
+		small {
+			display: block;
+			margin:0 0 1.618em;
+		}
+	}
+	#commentform  {
+		.comment-form-author, .comment-form-email, .comment-form-url {
+			width:30.75%;
+			float: left;
+			margin-right:3.8%;
+		}
+		.comment-form-url, .comment-form-rating {
+			margin-right:0;
+		}
+		.comment-form-rating {
+			clear:both;
+		}
+		label {
+			display:inline-block;
+		}
+		input.txt, input[type="text"], textarea {
+			width:100%;
+			.borderbox;
+		}
+		.comment-form-comment {
+			clear:both;
+		}
+	}
+}
+
+/* Pingbacks / Trackbacks */
+.pinglist {
+	li {
+		margin: 0 0 0 1.618em;
+		list-style-type: decimal;
+		.author {
+			font-weight: bold;
+		}
+		.date { }
+		.pingcontent {
+			display: block;
+			margin:0 0 1.618em;
+		}
+	}
+}

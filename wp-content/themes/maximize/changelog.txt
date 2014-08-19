@@ -1,0 +1,83 @@
+*** Maximize Changelog ***
+
+2014.05.26 - version 1.3.3
+ * Fix - Admin bar display on handheld devices
+   css/setup.less
+   style.css
+
+2014.05.21 - version 1.3.2
+ * Fix - Cart layout tweaks for touch devices
+   css/woocommerce.less
+   css/woocommerce.css
+
+ * Fix - Wishlist layout tweaks for touch devices
+   css/woocommerce.less
+   css/woocommerce.css
+
+ * Tweak - Renamed 'upstart_homepage_slideshow' filter to 'maximize_homepage_slideshow'
+   includes/theme-js.php
+
+2014.04.15 - version 1.3.1
+ * Fix - Footer functions correctly with static homepage
+   footer.php
+
+ * Tweak - Single course lesson display.
+   includes/theme-js.php
+   includes/theme-actions.php
+   css/imports/wordpress.less
+   style.css
+
+2014.03.04 - version 1.3.0
+ * New - Theme option to have full-screen homepage imagery
+   includes/theme-options.php
+   includes/js/jquery.fullscreen-images.js
+
+ * Fix - A bug where subsequent images in the homepage slider wouldn't resize correctly on Firefox.
+   includes/js/general.js
+
+ * Fix - Search field is no longer revealed on load on Android devices.
+   css/structure.less
+   style.css
+
+ * Fix - Updated fitvids to latest stable version
+   includes/js/fitvids.js
+   includes/js/fitvids.min.js
+
+ * Tweak - removed redundant animation speed theme option.
+   includes/theme-options.php
+
+2014.02.18 - version 1.2.0
+ * New - Integration with Projects plugin
+   functions.php
+   inclues/theme-plugin-integrations.php
+   includes/integrations/projects/
+
+ * Tweak - Homepage slides are no longer distored.
+   css/layout.less
+   css/layout.css
+   includes/js/general.js
+   includes/js/general.min.js
+
+ * Tweak - Slide title shadow tweak to fix issues with short titles
+   css/structure.less
+   style.css
+
+2014.01.15 - version 1.1.1
+ * Fix - Removed widow blocking javascript which caused errors when a slite title had no spaces.
+   includes/js/general.js,
+   includes/js/general.min.js
+
+ * Tweak - Added specificity to slider styles
+   css/imports/flexslider.less,
+   style.css
+
+2013.11.08 - version 1.1.0
+ * styles/*.css - Fixed blog title colors.
+ * css/layout.css
+   includes/js/jquery.masonry.fire.js - Fixed testimonials / features layout in footer on business template.
+ * single.php - Fixed undefined var notice in markup.
+ * content-image.php, content-gallery.php - Added support for gallery / image post formats.
+ * includes/theme-js.php - Homepage slideshow can now be abled via upstart_homepage_slideshow filter.
+
+2013.10.16 - version 1.0.0
+ * First release!

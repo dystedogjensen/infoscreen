@@ -1,0 +1,3 @@
+18795
+8028f8b05fd9b68106d817e67064c025
+simplicity/style.css

@@ -1,0 +1,41 @@
+/*Styling for viewing infoscreen on screens */
+
+body {
+	height:100%;
+	width:100%;
+}
+
+body.home .slide-info {
+	display:none
+}
+
+body.home .flex-direction-nav, body.page-id-42 .flex-direction-nav {
+	display:none; 
+}
+
+body.home .toggle-and-nav, body.page-id-42 .toggle-and-nav {
+	display:none;
+
+#header #logo {
+float: left;
+margin-bottom: 1.618em;
+max-width: 65.141%;
+padding: 1.618em;
+}
+
+#top_right {
+	display:block;
+	float:right;
+	z-index:9999;
+	background-color: #FFF;
+	height:900px;
+	width:20%;
+}
+
+body.page-id-42 #breadcrumps {
+	display: none;
+}
+
+body.page-id-42 #sidebar {
+	display:none;
+}

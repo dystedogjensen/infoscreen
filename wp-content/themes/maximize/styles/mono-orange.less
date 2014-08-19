@@ -1,0 +1,235 @@
+@import url("../css/mixins.less");
+
+@color_links:       #eab488;                // Links / Main theme colour
+@color_body:        @bg_dark + #3a3a3a;     // Body Copy
+@bg_light:          #f5f5f5;
+@bg_dark:           @bg_light - #bbb;
+@color_alt:			@color_links;
+
+
+/**
+ * Color_body
+ */
+body {
+	color: @color_body;
+}
+
+/**
+ * Color_links
+ */
+
+a.button, #commentform #submit, .submit, input[type=submit], input.button, button.button, #wrapper .woo-sc-button {
+	&:hover {
+		color: #fff;
+	}
+}
+
+#navigation ul.nav li a {
+	color: desaturate(@color_links + #333,20%);
+}
+
+.woo-pagination a.page-numbers:hover {
+	.inset_box_shadow(0,.202em,0,0,@color_links);
+}
+
+.nav-toggle:hover:before,
+.cart-contents:hover:before,
+.flex-direction-nav a:hover:after,
+.flex-direction-nav a.slide-info.active:hover:after,
+.back-to-top:hover:before,
+#inner .nav-toggle:hover:before, #inner .cart-contents:hover:before {
+	.inset_box_shadow(-5em,0,0,0,@color_links);
+}
+a,
+.search-toggle.active:before,
+.search-toggle:hover:before,
+.flex-direction-nav a.slide-info.active:after,
+#navigation ul.nav li a:hover,
+ul.products li.product h3,
+.single-product .product .price,
+.quantity .plus,
+.quantity .minus,
+#inner .search-toggle:hover:before, #inner .search-toggle.active:before,
+.post aside.meta .categories:before, .type-page aside.meta .categories:before, .post aside.meta .comments:before, .type-page aside.meta .comments:before,
+.post aside.meta .tags:before,
+#breadcrumbs a:hover,
+.has-masonry .post .post-more a:hover,
+#comments .comment .comment-head .edit a:hover,
+#comments .comment .reply a:hover{
+	color: @color_links;
+}
+
+ul.products li.product h3:hover,
+a:hover,
+.quantity .plus:hover,
+.quantity .minus:hover,
+.has-masonry .post header h1 a:hover:after {
+	color: @color_links - #222;
+}
+
+#navigation .widget a,
+#navigation .nav-close:after {
+	color: @color_links + #555;
+}
+#navigation .widget {
+	color: @color_links + #777;
+}
+
+.cart-contents span.content span.count,
+.cart-contents span.content,
+#header .site-header .site-title a:hover,
+#navigation .social a:hover:before,
+#inner #header .site-header .site-title a,
+.onsale,
+a.button, #commentform #submit, .submit, input[type=submit], input.button, button.button, #wrapper .woo-sc-button,
+input[type="radio"]:checked,
+#post-entries a:hover,
+.social a:hover:before,
+#tiptip_content,
+ul.products li.product .added_to_cart,
+#navigation,
+#inner .nav-toggle.active:before, #inner .cart-contents.active:before,
+.nav-toggle.active:before, .search-toggle.active:before, .cart-contents.active:before,
+.has-masonry .post > a:first-child:before,
+#inner #header .site-header .site-title a:after,
+.page .page .entry > blockquote:after, .single-post .entry > blockquote:after {
+	background-color: @color_links;
+}
+
+.has-masonry .post > a:first-child:hover:after {
+	.inset_box_shadow(30em,0,0,0,fade(@color_links,50%));
+}
+
+a.button.alt, button.button.alt, input.button.alt {
+	background-color: @color_links;
+	&:hover {
+		background-color: @color_links - #222;
+	}
+}
+
+a.button, #commentform #submit, .submit, input[type=submit], input.button, button.button, #wrapper .woo-sc-button, ul.products li.product .added_to_cart {
+	&:hover {
+		background-color: @color_links - #222
+	}
+}
+
+#navigation .social a:before {
+	background-color: @color_links - #111;
+}
+
+ul.products li.product.sale,
+.single-product .product.sale {
+	border-top-color: @color_links;
+}
+
+p.stars a.star-1.active:after, p.stars a.star-2.active:after, p.stars a.star-3.active:after, p.stars a.star-4.active:after, p.stars a.star-5.active:after {
+	text-shadow:0 0 .618em fade(@color_links,50%);
+}
+
+input[type=text], input.input-text, textarea, input.txt, input[type=tel], input[type=email], input[type=password] {
+	&:active, &:focus {
+		border-color: @color_links;
+		.box_shadow(0,0,.618em,0,fade(@color_links,50%));
+	}
+}
+
+#navigation ul.nav li a:hover, {
+	color: #fff;
+}
+
+/**
+ * Color_alt
+ */
+#sidebar a,
+.star-rating:before,
+.star-rating span:before {
+	color: @color_alt;
+}
+#sidebar a:hover {
+	color: @color_alt - #222;
+}
+.cart-contents span.content span.count {
+	background-color: @color_alt;
+}
+
+/**
+ * Bg_light
+ */
+#inner #wrapper,
+#comments ul.children:after,
+.woocommerce-tabs ul.tabs li a,
+.single-product .thumbnails  {
+	background-color: @bg_light;
+}
+#inner .nav-toggle:before, #inner .search-toggle:before, #inner .cart-contents:before{
+	background-color: @bg_light + #111;
+}
+.single-product .product form.cart {
+	background-color: @bg_light + #060606;
+}
+.has-masonry .post .post-more {
+	background-color: fade(@bg_light,40%);
+}
+#connect,
+#post-entries a {
+	background-color: @bg_light - #060606;
+}
+.social a:hover:before {
+	color: @bg_light + #111;
+}
+ul.products li.product,
+.single-product .product,
+article.post, article.page,
+#breadcrumbs,
+#reviews .comment .comment-text,
+#comments .comment .comment-content,
+#comments .comment .avatar img,
+#comments ul.children:after,
+.woocommerce .page-description, .woocommerce .term-description,
+.page-template-template-business-php .widget_woothemes_testimonials .quote, .page-template-template-business-php .widget_woothemes_features .feature {
+	border-color: @bg_light - #0f0f0f;
+}
+#comments .comment:after,
+.back-to-top:before {
+	background-color: @bg_light - #0f0f0f;
+}
+#reviews .comment .comment-text:before {
+	border-right-color:@bg_light - #0f0f0f;
+}
+#post-author, #post-author h2 {
+	color: @bg_light;
+}
+
+
+/**
+ * Bg_dark
+ */
+#header .site-header .site-description,
+body.home .flexslider li.slide,
+#inner #header .site-header .site-description:after,
+body.home,
+#footer,
+.page .page .entry > blockquote, .single-post .entry > blockquote,
+#post-author {
+	background-color: @bg_dark;
+}
+.page .page .entry > blockquote, .single-post .entry > blockquote {
+	-webkit-box-shadow:
+		20em 0 0 0 @bg_dark,
+		-20em 0 0 0 @bg_dark;
+	box-shadow:
+		20em 0 0 0 @bg_dark,
+		-20em 0 0 0 @bg_dark;
+}
+
+@media only screen and (min-width: 768px) {
+	#footer {
+		border-top-color:@color_links;
+	}
+	.woocommerce_tabs ul.tabs li.active a, .woocommerce-tabs ul.tabs li.active a {
+		color: @color_links;
+	}
+	.woocommerce-tabs ul.tabs li a:hover {
+		color: @color_links;
+	}
+}

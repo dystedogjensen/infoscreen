@@ -1,0 +1,400 @@
+/**
+ * Variables
+ */
+/**
+ * Functions
+ */
+/**
+ * Mixins
+ */
+/**
+ * Animations
+ */
+@-webkit-keyframes spin-360 {
+  from {
+    -webkit-transform: rotate(0);
+    /* Saf3.1+, Chrome */
+  
+    -moz-transform: rotate(0);
+    /* FF3.5+ */
+  
+    -ms-transform: rotate(0);
+    /* IE9 */
+  
+    -o-transform: rotate(0);
+    /* Opera 10.5 */
+  
+    transform: rotate(0);
+    zoom: 1;
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    /* Saf3.1+, Chrome */
+  
+    -moz-transform: rotate(360deg);
+    /* FF3.5+ */
+  
+    -ms-transform: rotate(360deg);
+    /* IE9 */
+  
+    -o-transform: rotate(360deg);
+    /* Opera 10.5 */
+  
+    transform: rotate(360deg);
+    zoom: 1;
+  }
+}
+@-moz-keyframes spin-360 {
+  from {
+    -webkit-transform: rotate(0);
+    /* Saf3.1+, Chrome */
+  
+    -moz-transform: rotate(0);
+    /* FF3.5+ */
+  
+    -ms-transform: rotate(0);
+    /* IE9 */
+  
+    -o-transform: rotate(0);
+    /* Opera 10.5 */
+  
+    transform: rotate(0);
+    zoom: 1;
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    /* Saf3.1+, Chrome */
+  
+    -moz-transform: rotate(360deg);
+    /* FF3.5+ */
+  
+    -ms-transform: rotate(360deg);
+    /* IE9 */
+  
+    -o-transform: rotate(360deg);
+    /* Opera 10.5 */
+  
+    transform: rotate(360deg);
+    zoom: 1;
+  }
+}
+@-o-keyframes spin-360 {
+  from {
+    -webkit-transform: rotate(0);
+    /* Saf3.1+, Chrome */
+  
+    -moz-transform: rotate(0);
+    /* FF3.5+ */
+  
+    -ms-transform: rotate(0);
+    /* IE9 */
+  
+    -o-transform: rotate(0);
+    /* Opera 10.5 */
+  
+    transform: rotate(0);
+    zoom: 1;
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    /* Saf3.1+, Chrome */
+  
+    -moz-transform: rotate(360deg);
+    /* FF3.5+ */
+  
+    -ms-transform: rotate(360deg);
+    /* IE9 */
+  
+    -o-transform: rotate(360deg);
+    /* Opera 10.5 */
+  
+    transform: rotate(360deg);
+    zoom: 1;
+  }
+}
+@keyframes spin-360 {
+  from {
+    -webkit-transform: rotate(0);
+    /* Saf3.1+, Chrome */
+  
+    -moz-transform: rotate(0);
+    /* FF3.5+ */
+  
+    -ms-transform: rotate(0);
+    /* IE9 */
+  
+    -o-transform: rotate(0);
+    /* Opera 10.5 */
+  
+    transform: rotate(0);
+    zoom: 1;
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    /* Saf3.1+, Chrome */
+  
+    -moz-transform: rotate(360deg);
+    /* FF3.5+ */
+  
+    -ms-transform: rotate(360deg);
+    /* IE9 */
+  
+    -o-transform: rotate(360deg);
+    /* Opera 10.5 */
+  
+    transform: rotate(360deg);
+    zoom: 1;
+  }
+}
+/**
+ * Color_body
+ */
+body {
+  color: #656660;
+}
+/**
+ * Color_links
+ */
+a.button:hover,
+#commentform #submit:hover,
+.submit:hover,
+input[type=submit]:hover,
+input.button:hover,
+button.button:hover,
+#wrapper .woo-sc-button:hover {
+  color: #fff;
+}
+#navigation ul.nav li a {
+  color: #fff7f0;
+}
+.woo-pagination a.page-numbers:hover {
+  box-shadow: inset 0 0.202em 0 0 #edc39c;
+  -webkit-box-shadow: inset 0 0.202em 0 0 #edc39c;
+}
+.nav-toggle:hover:before,
+.cart-contents:hover:before,
+.flex-direction-nav a:hover:after,
+.flex-direction-nav a.slide-info.active:hover:after,
+.back-to-top:hover:before,
+#inner .nav-toggle:hover:before,
+#inner .cart-contents:hover:before {
+  box-shadow: inset -5em 0 0 0 #edc39c;
+  -webkit-box-shadow: inset -5em 0 0 0 #edc39c;
+}
+a,
+.search-toggle.active:before,
+.search-toggle:hover:before,
+.flex-direction-nav a.slide-info.active:after,
+#navigation ul.nav li a:hover,
+ul.products li.product h3,
+.single-product .product .price,
+.quantity .plus,
+.quantity .minus,
+#inner .search-toggle:hover:before,
+#inner .search-toggle.active:before,
+.post aside.meta .categories:before,
+.type-page aside.meta .categories:before,
+.post aside.meta .comments:before,
+.type-page aside.meta .comments:before,
+.post aside.meta .tags:before,
+#breadcrumbs a:hover,
+.has-masonry .post .post-more a:hover,
+#comments .comment .comment-head .edit a:hover,
+#comments .comment .reply a:hover {
+  color: #edc39c;
+}
+ul.products li.product h3:hover,
+a:hover,
+.quantity .plus:hover,
+.quantity .minus:hover,
+.has-masonry .post header h1 a:hover:after {
+  color: #cba17a;
+}
+#navigation .widget a,
+#navigation .nav-close:after {
+  color: #fffff1;
+}
+#navigation .widget {
+  color: #ffffff;
+}
+.cart-contents span.content span.count,
+.cart-contents span.content,
+#header .site-header .site-title a:hover,
+#navigation .social a:hover:before,
+#inner #header .site-header .site-title a,
+.onsale,
+a.button,
+#commentform #submit,
+.submit,
+input[type=submit],
+input.button,
+button.button,
+#wrapper .woo-sc-button,
+input[type="radio"]:checked,
+#post-entries a:hover,
+.social a:hover:before,
+#tiptip_content,
+ul.products li.product .added_to_cart,
+#navigation,
+#inner .nav-toggle.active:before,
+#inner .cart-contents.active:before,
+.nav-toggle.active:before,
+.search-toggle.active:before,
+.cart-contents.active:before,
+.has-masonry .post > a:first-child:before,
+#inner #header .site-header .site-title a:after,
+.page .page .entry > blockquote:after,
+.single-post .entry > blockquote:after {
+  background-color: #edc39c;
+}
+.has-masonry .post > a:first-child:hover:after {
+  box-shadow: inset 30em 0 0 0 rgba(237, 195, 156, 0.8);
+  -webkit-box-shadow: inset 30em 0 0 0 rgba(237, 195, 156, 0.8);
+}
+a.button.alt,
+button.button.alt,
+input.button.alt {
+  background-color: #9cc6ed;
+}
+a.button.alt:hover,
+button.button.alt:hover,
+input.button.alt:hover {
+  background-color: #7aa4cb;
+}
+a.button:hover,
+#commentform #submit:hover,
+.submit:hover,
+input[type=submit]:hover,
+input.button:hover,
+button.button:hover,
+#wrapper .woo-sc-button:hover,
+ul.products li.product .added_to_cart:hover {
+  background-color: #cba17a;
+}
+#navigation .social a:before {
+  background-color: #dcb28b;
+}
+ul.products li.product.sale,
+.single-product .product.sale {
+  border-top-color: #edc39c;
+}
+p.stars a.star-1.active:after,
+p.stars a.star-2.active:after,
+p.stars a.star-3.active:after,
+p.stars a.star-4.active:after,
+p.stars a.star-5.active:after {
+  text-shadow: 0 0 0.618em rgba(237, 195, 156, 0.5);
+}
+input[type=text]:active,
+input.input-text:active,
+textarea:active,
+input.txt:active,
+input[type=tel]:active,
+input[type=email]:active,
+input[type=password]:active,
+input[type=text]:focus,
+input.input-text:focus,
+textarea:focus,
+input.txt:focus,
+input[type=tel]:focus,
+input[type=email]:focus,
+input[type=password]:focus {
+  border-color: #edc39c;
+  box-shadow: 0 0 0.618em 0 rgba(237, 195, 156, 0.5);
+  -webkit-box-shadow: 0 0 0.618em 0 rgba(237, 195, 156, 0.5);
+}
+#navigation ul.nav li a:hover {
+  color: #fff;
+}
+/**
+ * Color_alt
+ */
+#sidebar a,
+.star-rating:before,
+.star-rating span:before {
+  color: #9cc6ed;
+}
+#sidebar a:hover {
+  color: #7aa4cb;
+}
+.cart-contents span.content span.count {
+  background-color: #9cc6ed;
+}
+/**
+ * Bg_light
+ */
+#inner #wrapper,
+#comments ul.children:after,
+.woocommerce-tabs ul.tabs li a,
+.single-product .thumbnails {
+  background-color: #f7f8f2;
+}
+#inner .nav-toggle:before,
+#inner .search-toggle:before,
+#inner .cart-contents:before {
+  background-color: #ffffff;
+}
+.single-product .product form.cart {
+  background-color: #fdfef8;
+}
+.has-masonry .post .post-more {
+  background-color: rgba(247, 248, 242, 0.4);
+}
+#connect,
+#post-entries a {
+  background-color: #f1f2ec;
+}
+.social a:hover:before {
+  color: #ffffff;
+}
+ul.products li.product,
+.single-product .product,
+article.post,
+article.page,
+#breadcrumbs,
+#reviews .comment .comment-text,
+#comments .comment .comment-content,
+#comments .comment .avatar img,
+#comments ul.children:after,
+.woocommerce .page-description,
+.woocommerce .term-description,
+.page-template-template-business-php .widget_woothemes_testimonials .quote,
+.page-template-template-business-php .widget_woothemes_features .feature {
+  border-color: #e8e9e3;
+}
+#comments .comment:after,
+.back-to-top:before {
+  background-color: #e8e9e3;
+}
+#reviews .comment .comment-text:before {
+  border-right-color: #e8e9e3;
+}
+/**
+ * Bg_dark
+ */
+#header .site-header .site-description,
+body.home .flexslider li.slide,
+#inner #header .site-header .site-description:after,
+body.home,
+#footer,
+.page .page .entry > blockquote,
+.single-post .entry > blockquote {
+  background-color: #2b2c26;
+}
+.page .page .entry > blockquote,
+.single-post .entry > blockquote {
+  -webkit-box-shadow: 20em 0 0 0 #2b2c26, -20em 0 0 0 #2b2c26;
+  box-shadow: 20em 0 0 0 #2b2c26, -20em 0 0 0 #2b2c26;
+}
+@media only screen and (min-width: 768px) {
+  #footer {
+    border-top-color: #edc39c;
+  }
+  .woocommerce_tabs ul.tabs li.active a,
+  .woocommerce-tabs ul.tabs li.active a {
+    color: #edc39c;
+  }
+  .woocommerce-tabs ul.tabs li a:hover {
+    color: #edc39c;
+  }
+}

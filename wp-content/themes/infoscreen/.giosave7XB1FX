@@ -1,0 +1,24 @@
+/*
+ Theme Name:     infoscreen -child theme of maximize
+ Theme URI:      http://infoscreen.dystedogjensen.dk/
+ Description:    infoscreen-theme - a child theme of maximize
+ Author:         Adam Jensen
+ Author URI:     http://dystedogjensen.dk
+ Template:       maximize
+ Version:        1.0
+*/
+
+@import url("../maximize/style.css");
+
+body.home {
+	background
+}
+
+body.home {
+	overflow:hidden;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    height: 10px;
+    } 

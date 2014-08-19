@@ -1,0 +1,537 @@
+/*
+The styles in this stylesheet only apply to resolutions 768px and up
+
+CALCULATING DIMENSIONS:
+----------------------
+The layout is fluid. The sote wrapper (.col-full) has a fixed pixel max-width.
+All subsequent dimensions are calculated based on that fixed pixel width, using the formula: target / context = result
+Credit - http://www.alistapart.com/articles/fluidgrids/
+
+-----
+INDEX
+-----
+
+1. Containers & Columns
+2. Footer widgets
+3. IE Fixes
+
+/*----------------------*/
+
+@import "mixins";
+
+/*----------------------*/
+
+@media only screen and (min-width: 768px) and (max-width:800px) {
+	/**
+	 * 768 - 800
+	 */
+	.single {
+		#main, #breadcrumbs {
+			width:71.998%;
+			margin-right:0;
+		}
+	}
+	.single.layout-full {
+		#main, #breadcrumbs {
+			width:71.998%;
+			margin-right:0;
+		}
+	}
+	#sidebar {
+		width:23%;
+	}
+	#main, #breadcrumbs, body.page-template-template-blog-php #main, body.page-template-template-blog-php #breadcrumbs, body.page-template-template-fullwidth-php #main, body.page-template-template-business-php #main.fullwidth, body.page-template-template-fullwidth-php #breadcrumbs {
+	    width: 71.998%;
+	}
+	.single-post article .post-header.no-image h1, .page .page article .post-header.no-image h1, .single-post article .page-header.no-image h1, .page .page article .page-header.no-image h1 {
+		padding-left:.618em !important;
+	}
+}
+
+@media only screen and (min-width: 801px) and (max-width:1380px) {
+	/**
+	 * 800 - 1380
+	 */
+	#main, #breadcrumbs, body.page-template-template-blog-php #main, body.page-template-template-blog-php #breadcrumbs, body.page-template-template-fullwidth-php #main, body.page-template-template-business-php #main.fullwidth, body.page-template-template-fullwidth-php #breadcrumbs {
+	    width: 73.998%;
+	}
+	.single {
+		#main, #breadcrumbs {
+			width:73.998%;
+		}
+	}
+	.single.layout-full {
+		#main, #breadcrumbs {
+			width:73.998%;
+			margin-right:0;
+		}
+	}
+	#sidebar {
+		width:21%;
+	}
+	.single-post, .page .page {
+		#post-author, #connect, #related-posts, #comments, #respond {
+			padding:4.236em;
+		}
+		article {
+			.entry, .post-more {
+				padding:4.236em;
+				font-size: 1.1em;
+			}
+			.post-header, .page-header {
+				&.no-image {
+					h1 {
+						padding-left:2em !important;
+					}
+				}
+				&.has-image {
+					h1 {
+						padding-left:2em !important;
+					}
+				}
+			}
+		}
+	}
+	.single-lesson {
+		#respond, #comments {
+			padding:4.236em;
+		}
+	}
+	.single-product .product, .woocommerce .term-description, .woocommerce .page-description, .single-lesson article.lesson, article.type-quiz {
+		padding:4.236em;
+	}
+}
+@media only screen and (min-width: 1380px) {
+	/**
+	 * > 1380
+	 */
+	#wrapper {
+		font-size:1.1em;
+	}
+	body {
+		#main, #breadcrumbs {
+			width:68.998%;
+			margin-right:8%;
+		}
+	}
+	#sidebar {
+		width:17%;
+		font-size:.857em;
+	}
+	.single-post {
+
+	}
+	.single-post, .page .page {
+		#post-author, #connect, #related-posts, #comments, #respond {
+			padding:3.631em 5.874em;
+		}
+		#main {
+			font-size: 1.1em;
+		}
+		article {
+			.entry, .post-more {
+				padding:5.874em;
+				padding-top:1em;
+			}
+			.post-header, .page-header {
+				&.no-image {
+					h1 {
+						padding:2.55em !important;
+						padding-bottom:0 !important;
+					}
+				}
+				&.has-image {
+					h1 {
+						padding-left:2.618em !important;
+						padding-right:2.618em;
+						padding-top:1.387em;
+					}
+				}
+			}
+		}
+	}
+	.single-lesson {
+		#respond, #comments {
+			padding:3.631em 5.874em;
+		}
+	}
+	.single-product .product, .single-lesson article.lesson, article.type-quiz {
+		padding:4.236em;
+	}
+	.back-to-top {
+		font-size: 1.1em;
+	}
+}
+
+@media only screen and (min-width: 1800px) {
+	/**
+	 * > 1800
+	 */
+	#wrapper {
+		font-size:1.387em;
+	}
+	.has-masonry .post, ul.products .product {
+		font-size:.857em;
+	}
+
+}
+
+@media only screen and (min-width:479px) {
+	body.home {
+		.flexslider {
+			li.slide {
+				.slide-content {
+					width:300px;
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 767px) {
+	.flex-direction-nav {
+		display: block;
+		z-index: 999999999;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+
+
+	/* 1. CONTAINERS & COLUMNS */
+
+	#inner {
+		body.home {
+			#inner-wrapper {
+				padding:0 5.874em 0 2.618em;
+			}
+		}
+	}
+
+	#header {
+		.site-header {
+			max-width:23%;
+		}
+		#logo {
+			padding-left:2.618em;
+		}
+	}
+	#inner {
+		#header {
+			.site-header {
+				.site-title a, .site-description {
+					&:after {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+	#inner-wrapper {
+		padding:0 5.874em 0 2.618em;
+		.inset_box_shadow(-3.631em,0,0,0,rgba(0,0,0,0.05));
+	}
+
+	#main.fullwidth {
+	    margin-right:0;
+	    width:76.998%;
+	}
+	#main, #breadcrumbs {
+	    float: right;
+	    position: relative;
+	}
+	#sidebar {
+	    float: left;
+	    padding:0;
+	    color: @color_body + #444;
+	    .opacity(0.5);
+	    -webkit-transform:translateZ(0);
+	    .transition(opacity,ease,.3s);
+	    &:hover {
+	    	.opacity(1);
+	    }
+	    h1, h2, h3, h4, h5, h6 {
+	    	color: @color_body + #222;
+	    }
+	    .widget {
+	    	margin-bottom:4.236em;
+	    	&:after {
+				position: absolute;
+				bottom:0;
+				left:0;
+				width:130%;
+				z-index: -1;
+				left:-3.631em;
+				height:1px;
+				border-bottom:1px solid rgba(0,0,0,0.1);
+				content: "";
+				display: block;
+			}
+	    }
+	}
+
+	.col-left {
+	    float: left;
+	}
+	.col-right {
+	    float: right;
+	}
+	.page-template-template-sitemap-php  {
+		#sitemap-pages, .product-categories  {
+			float: left;
+			width: 48%;
+		}
+		#sitemap-categories , .products {
+			float: right;
+			width: 48%;
+		}
+		#sitemap-posts  {
+			clear: both;
+		}
+		.woocommerce {
+			.clearfix;
+		}
+	}
+	.page-template-template-contact-php {
+	    .location-twitter  {
+	    	.col-left  {
+	    		float: left;
+	    	}
+	    	#office-location {
+	    	    width: 48%;
+	    	    margin: 0 1em 0 0;
+	    	}
+	    	.contact-social  {
+	    	    float: left;
+	    	    width: 48%;
+	    	    #twitter  {
+	    	    	margin: 0;
+	    	    }
+	    	}
+	    }
+	}
+
+	#breadcrumbs {
+		padding-left:0;
+	}
+
+	// Homepage
+	body.home {
+		.flexslider {
+			li.slide {
+				.slide-content {
+					bottom:30%;
+					width:45%;
+					header {
+						h1 {
+							font-size:2em;
+						}
+					}
+					.entry {
+						display: block;
+						p {
+							font-size: 1.387em;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	// Single posts
+	.single-post {
+		article {
+			.post-header {
+				h1 {
+					margin-bottom:0 !important;
+				}
+			}
+			.entry {
+				padding-top:0;
+			}
+		}
+	}
+	#comments .comment .comment-content {
+		padding:2.618em;
+	}
+
+	// Single Posts & Pages
+	.single-post, .page .page {
+		article {
+			.post-header, .page-header {
+				&.no-image {
+					h1 {
+						padding:1.387em;
+						padding-bottom:0;
+					}
+				}
+				h1 {
+					font-size:2.244em;
+				}
+				&.has-image {
+					h1 {
+						padding-left:.7em;
+					}
+				}
+			}
+			.entry {
+				padding-top:0;
+			}
+		}
+	}
+	.single-post {
+		article {
+			.entry {
+				padding-top:0;
+			}
+		}
+	}
+	.post, .type-page {
+		aside.meta {
+			padding-bottom:2.244em;
+			margin-bottom:3.631em;
+		}
+	}
+
+
+	/* 2. FOOTER WIDGETS */
+	#footer-widgets {
+		margin:0 -5.874em 0 -2.618em;
+		padding:3.631em 5.874em 3.631em 2.618em;
+		border:0;
+		border-top:.382em solid @color_body;
+		background-color: @bg_light + #0f0f0f;
+	    .block {
+	    	margin-right:3.8%;
+	    	float: left;
+	    }
+	    &.col-1 {
+	    	.block {
+	    		width: 100%;
+	    		float: none;
+	    	}
+	    	.footer-widget-1 {
+	    		margin-right:0;
+	    	}
+	    }
+	    &.col-2 {
+	    	.block {
+	    		width: 48%;
+	    	}
+	    	.footer-widget-2 {
+	    		margin-right:0;
+	    	}
+	    }
+	    &.col-3 {
+	    	.block {
+	    		width: 30.75%;
+	    	}
+	    	.footer-widget-3 {
+	    		margin-right:0;
+	    	}
+	    }
+	    &.col-4 {
+	    	.block {
+	    		width: 22.05%
+	    	}
+	    	.footer-widget-4 {
+	    		margin-right:0;
+	    	}
+	    }
+
+	}
+
+	#footer {
+		margin:0 -5.874em 0 -2.618em;
+		padding:2.618em 5.874em 2.618em 2.618em;
+		border:0;
+		border-top:.236em solid @color_links;
+		background-color: @bg_dark;
+	}
+
+	/* 3. IE FIXES */
+
+	.ie7 {
+	    #top-nav {
+	    	position: relative;
+	    	z-index: 9999999;
+	    }
+	    #header {
+	    	position: relative;
+	    }
+	}
+
+	.widget_woothemes_our_team {
+		.columns-2, .columns-3, .columns-4 {
+			font-size:.857em;
+			.clearfix;
+			.team-member {
+				float: left;
+				margin-right:3.8%;
+				margin-bottom:1.618em;
+				&.first {
+					clear:both;
+				}
+				&.last {
+					margin-right:0;
+				}
+			}
+		}
+		.columns-2 {
+			.team-member {
+				width:48%;
+			}
+		}
+		.columns-3 {
+			.team-member {
+				width:30.75%;
+			}
+		}
+		.columns-4 {
+			.team-member {
+				width:22.05%;
+			}
+		}
+	}
+
+	.woocommerce .page-description, .woocommerce .term-description {
+		padding:2.618em;
+	}
+
+}
+
+@media only screen and (min-width: 801px) and (max-width:1280px) {
+	/**
+	 * 801 - 1024
+	 */
+	.has-masonry {
+		.post {
+			width:251px;
+		}
+	}
+	.page-template-template-business-php #main {
+		.features, .testimonials {
+			.feature, .quote {
+				width:251px;
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 1281px) {
+	.has-masonry {
+		.post {
+			width:308px;
+		}
+	}
+	.page-template-template-business-php #main {
+		.features, .testimonials {
+			.feature, .quote {
+				width:308px;
+			}
+		}
+	}
+	.page .page article .page-header.has-image h1, .single-post article .post-header.has-image h1 {
+		padding-left:1.287em;
+	}
+}
